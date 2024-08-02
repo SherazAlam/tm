@@ -1,0 +1,12 @@
+@echo off
+
+REM Change directory to my project app
+cd C:\Users\moizk\Desktop\Deployment\Deployment\Code\Portal
+REM Start the app
+start cmd /k "npm start"
+
+REM wait for the development server to start
+timeout /t 5
+
+REM Open the default browser to the project app
+start http://localhost:3000/auth/sign-in
